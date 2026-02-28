@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nishant | Professional Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header id="navbar" class="py-8">
+        <nav class="max-w-7xl px-6 flex justify-between items-center">
+            <div class="text-4xl font-black tracking-tighter">
+                <span class="text-white">Nishant</span><span class="text-purple-500">.</span>
+            </div>
+            <ul class="hidden md:flex items-center space-x-10">
+                <li><a href="#home" class="text-slate-300 font-semibold uppercase tracking-widest">Home</a></li>
+                <li><a href="#about" class="text-slate-300 font-semibold uppercase tracking-widest">About</a></li>
+                <li><a href="#skills" class="text-slate-300 font-semibold uppercase tracking-widest">Skills</a></li>
+                <li><a href="#projects" class="text-slate-300 font-semibold uppercase tracking-widest">Projects</a></li>
+                <li><a href="#contact" class="btn-primary ml-4">Contact</a></li>
+            </ul>
+            <button id="mobile-menu-btn" class="md:hidden text-white">
+                <svg class="icon-svg icon-large" viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu">
+            <ul class="p-10 space-y-8">
+                <li><a href="#home" class="mobile-link text-slate-300 text-3xl font-bold">Home</a></li>
+                <li><a href="#about" class="mobile-link text-slate-300 text-3xl font-bold">About</a></li>
+                <li><a href="#skills" class="mobile-link text-slate-300 text-3xl font-bold">Skills</a></li>
+                <li><a href="#projects" class="mobile-link text-slate-300 text-3xl font-bold">Projects</a></li>
+                <li><a href="#contact" class="mobile-link btn-primary text-center">Contact Me</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="pt-32 pb-20 px-6">
+            <div class="max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center reveal">
+                <div class="space-y-10">
+                    <h3 class="text-3xl text-purple-400 font-bold tracking-widest uppercase">Hello, It's Me</h3>
+                    <h1 class="text-8xl font-black text-white tracking-tighter leading-none text-glow">Nishant</h1>
+                    <h3 class="text-5xl font-bold text-slate-300">
+                        And I'm a <span id="typing-text" class="text-purple-500 typing-cursor"></span>
+                    </h3>
+                    <p class="text-2xl text-slate-400 max-w-2xl leading-relaxed">
+                        I build interactive websites and creative applications. I blend technical depth with design aesthetics to create seamless user experiences.
+                    </p>
+                    <div id="social-links" class="flex space-x-8">
+                        <!-- Populated by JS -->
+                    </div>
+                    <div class="mt-10">
+                        <a href="#projects" class="btn-primary">View My Work</a>
+                    </div>
+                </div>
+                <div class="flex justify-center lg:justify-end">
+                    <div class="hero-img-container float-animation">
+                        <div class="absolute inset-0 bg-purple-600 rounded-full blur-[120px] opacity-30"></div>
+                        <div class="profile-img-wrapper">
+                            <img src="web.jpg" alt="Nishant Profile">
+                        </div>
+                        <div class="floating-icon" style="top: 10%; right: 0;">
+                            <svg class="icon-svg text-white" viewBox="0 0 24 24"><path d="M9.586 12l-4.293-4.293a1 1 0 011.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414-1.414L9.586 12zM14.414 12l4.293 4.293a1 1 0 01-1.414 1.414l-5-5a1 1 0 010-1.414l5-5a1 1 0 011.414 1.414L14.414 12z"/></svg>
+                        </div>
+                        <div class="floating-icon blue" style="bottom: 10%; left: 0;">
+                            <svg class="icon-svg text-white" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V8h16v10zm-2-1h-6v-2h6v2zM7.5 17l-1.41-1.41L8.67 13l-2.58-2.59L7.5 9l4 4-4 4z"/></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-32 px-6">
+            <div class="max-w-7xl reveal">
+                <div class="text-center mb-24">
+                    <h2 class="text-8xl font-black mb-8">About <span class="text-purple-500">Me</span></h2>
+                    <div style="width: 160px; height: 12px; background: var(--accent-purple); margin: 0 auto; border-radius: 999px;"></div>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+                    <div class="relative rounded-40 group" style="overflow: visible;">
+                        <div class="absolute inset-0 bg-purple-600 rounded-40" style="transform: translate(32px, 32px); z-index: -1;"></div>
+                        <div class="glass rounded-40 overflow-hidden shadow-2xl">
+                            <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=1470&auto=format&fit=crop" alt="Coding" style="width: 100%; display: block;">
+                        </div>
+                    </div>
+                    <div class="space-y-10">
+                        <h3 class="text-5xl font-black text-white">Web Developer & Java Enthusiast</h3>
+                        <p class="text-3xl text-slate-400 italic leading-relaxed">"I’m a curious learner and creative thinker who blends technical depth with design aesthetics."</p>
+                        <p class="text-2xl text-slate-300 leading-relaxed">
+                            Skilled in <strong>Java, JavaScript, React, and modern CSS</strong>, I enjoy experimenting with logic patterns, 
+                            animations, and interactive UI/UX. I am constantly learning new technologies to improve my craft.
+                        </p>
+                        <div class="grid grid-cols-2 gap-10 mt-10">
+                            <div class="p-10 glass rounded-3xl text-center">
+                                <p class="text-6xl font-black text-purple-400 mb-3">3+</p>
+                                <p class="text-slate-400 text-xl font-bold">Years Learning</p>
+                            </div>
+                            <div class="p-10 glass rounded-3xl text-center">
+                                <p class="text-6xl font-black text-purple-400 mb-3">20+</p>
+                                <p class="text-slate-400 text-xl font-bold">Projects Done</p>
+                            </div>
+                        </div>
+                        <div class="mt-10">
+                            <a href="#" class="btn-outline">
+                                <svg class="icon-svg mr-4" viewBox="0 0 24 24" style="width: 2rem; height: 2rem;"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+                                <span>Download CV</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-32 px-6" style="background: rgba(15, 23, 42, 0.3);">
+            <div class="max-w-7xl reveal">
+                <div class="text-center mb-24">
+                    <h2 class="text-8xl font-black mb-8">My <span class="text-purple-500">Skills</span></h2>
+                    <div style="width: 160px; height: 12px; background: var(--accent-purple); margin: 0 auto; border-radius: 999px;"></div>
+                </div>
+                <div id="skills-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-10">
+                    <!-- Populated by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-32 px-6">
+            <div class="max-w-7xl reveal">
+                <div class="text-center mb-24">
+                    <h2 class="text-8xl font-black mb-8">Latest <span class="text-purple-500">Projects</span></h2>
+                    <div style="width: 160px; height: 12px; background: var(--accent-purple); margin: 0 auto; border-radius: 999px;"></div>
+                </div>
+                <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
+                    <!-- Populated by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-32 px-6" style="background: rgba(15, 23, 42, 0.3);">
+            <div class="max-w-5xl reveal">
+                <div class="text-center mb-24">
+                    <h2 class="text-8xl font-black mb-8">Contact <span class="text-purple-500">Me</span></h2>
+                    <div style="width: 160px; height: 12px; background: var(--accent-purple); margin: 0 auto; border-radius: 999px;"></div>
+                    <p class="mt-10 text-2xl text-slate-400">Have a project in mind? Let's talk about it.</p>
+                </div>
+                <div class="glass p-12 md:p-20 rounded-50">
+                    <form id="contact-form" class="space-y-10">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                            <input type="text" placeholder="Full Name" required>
+                            <input type="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                            <input type="tel" placeholder="Phone Number">
+                            <input type="text" placeholder="Subject">
+                        </div>
+                        <textarea placeholder="Your Message" required rows="8"></textarea>
+                        <div class="text-center">
+                            <button type="submit" class="btn-primary" style="font-size: 1.5rem; padding: 1.5rem 5rem;">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-20 px-6">
+        <div class="max-w-7xl flex flex-col md:flex-row justify-between items-center space-y-12 md:space-y-0">
+            <div class="text-4xl font-black tracking-tighter">
+                <span class="text-white">Nishant</span><span class="text-purple-500">.</span>
+            </div>
+            <div id="footer-socials" class="flex space-x-10">
+                <!-- Populated by JS -->
+            </div>
+            <p class="text-slate-400 text-xl">&copy; 2024 Nishant. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button id="scroll-top">
+        <!-- SVG injected by JS -->
+    </button>
+
+    <script src="index.js"></script>
+</body>
+</html>
